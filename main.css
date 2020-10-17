@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+.header{
+    background:white;
+    border-bottom:solid 1px rgb(218, 218, 218);
+    padding:14px;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    padding:0;
+    margin:30px 0;
+}
+nav ul li a{
+    margin-right:15px;
+    font-size:18px;
+    transition: 0.25s;
+    color:black;
+}
+nav ul li a:hover{
+    color:#78913d;
+    text-decoration:none;
+}
+.main-nav div{
+    margin-left:auto;
+    margin-right:auto;
+}
+.main-content{
+    background:white;
+}
+.brand-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+}
+.navbar{
+    font-family: "Inter";
+}
+h1{
+    /* text-align: center; */
+    font-size:48px;
+    font-weight:300;
+    /* padding:40px 0; */
+    margin-bottom:0;
+    display: flex;
+}
+h1 span{
+    color:#78913d;
+    padding-left:14px;
+}
+.social-block{
+    padding-top:14px;
+    float:right;
+}
+.fa-instagram, .fa-twitter{
+    color:#78913d;
+    transition:0.25s;
+}
+.fa-instagram:hover, .fa-twitter:hover{
+    color:black;
+}
+.fa-instagram{
+    border-left: solid 1px rgb(218, 218, 218);
+    padding-left:30px;
+}
+.parallax1{
+    /* The image used */
+    background-image: url("images/jess.JPG");
+  
+    /* Set a specific height */
+    min-height: 375px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 0px -350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-info{
+    border-top: solid 1px rgb(218, 218, 218);
+    padding-bottom:500px;
+  }
+  .banner-info__text{
+    padding:50px 100px 0 0 ;
+    font-family:"Inter";
+  }
+  .banner-info__bullets{
+    background:#fafcf2;
+  }
+  .banner-info ul{
+    /* border-left: solid 1px rgb(218, 218, 218); */
+    list-style-type: circle;
+    font-size:18px;
+    padding:50px 0px 0px 50px;
+  }
+  .banner-info li{
+    line-height:2;
+    font-family:"Inter";
+  }
+  /* carousel */
+  
+  .carousel{
+    margin:40px 200px 40px 200px;
+  }
+  .carousel-item{
+    text-align: center;
+    font-family: "Handlee";
+    font-size:20px;
+  }
+  .carousel-indicators{
+      
+  }
+  h2{
+    font-family: "Inter";
+    text-align: center;
+    font-size: 18px;
+    padding-top:40px;
+    color:#78913d;
+  }
