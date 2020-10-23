@@ -9,8 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Handlee&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Handlee&family=Quicksand:wght@300&family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
@@ -19,18 +20,24 @@
             <div class="main-nav row">
                 <div class="col-3 navbar">
                     <ul>
-                        <li> <a href="">home</a> </li>
-                        <li> <a href="">about</a> </li>
-                        <li> <a href="">contact</a> </li>
+                        <li> <a href="index.html">home</a> </li>
+                        <li> <a href="about.html">about</a> </li>
+                        <li> <a href="prices.html">prices</a> </li>
+                        <li> <a href="gallery.html">gallery</a> </li>
+                        <li> <a href="blog.html">blog</a></li>
                     </ul>
                 </div>
-                <div class="col-6 brand-name">
-                    <h1>jessica warren <span>tennis</span></h1>
+                <div class="col-6 header-logo">
+                    <a href="index.html">
+                        <img src="images/jess-logo.png" alt="">
+                        <h1>jessica warren <span>tennis</span></h1>
+                    </a>
                 </div>
                 <div class="col-3">
                     <ul class="social-block">
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -42,24 +49,39 @@
             </div>
         </div>
     </div> -->
-    <div class="parallax1"></div>
-    <div class="container">
-        <h2>Read what students have to say...</h2>
+    <div class="parallax1"><a class="btn contact-btn">Contact Jessica</a></div>
+    <div class="container testimonials">
+        <h2 class="testimonial-heading">Read what students have to say...</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel optio nihil labore! Accusamus voluptatibus exercitationem nihil molestiae laudantium consequuntur culpa!"</div>
+                <div>"Jessica started giving my daughter Autumn, tennis lessons at age 8. She motivated Autumn when others couldn’t. She uses many different activities during her lessons to keep her students motivated and her knowledge of tennis immense. I’ve taught tennis for more than 30 years including teaching tennis in the Physical Education Department at USC. I regularly send clients to Jessica when I don’t have time for them."</div>
+                <div class="quote-author">John Jesse, Culver City</div>
               </div>
               <div class="carousel-item">
-                    <div>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel optio nihil labore! Accusamus voluptatibus exercitationem nihil molestiae laudantium consequuntur culpa!"</div>              
+                    <div>"Jessica Warren is a very knowledgable and thoughtful coach. Whether it’s working on the fundamentals or advanced aspects of the game, she provides tailored and in-depth instruction specific to the player and their needs."</div>  
+                    <div class="quote-author">Tin Hoang, Culver City</div>            
                 </div>
               <div class="carousel-item">
-                    <div>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel optio nihil labore! Accusamus voluptatibus exercitationem nihil molestiae laudantium consequuntur culpa!"</div>              
+                    <div>"Jessica is a great coach. She is professional, dedicated, and super friendly. She has been coaching my children for five years and has successfully helped them to reach their highest potential."</div>  
+                    <div class="quote-author">Kathy He, Mar Vista</div>            
+                </div>
+            </div>
+              <div class="carousel-item">
+                    <div>"Jessica has been teaching my son for 3 years. She has helped my son improve his skills on the court and also she has provided a safe and fun environment for my son to enjoy is time on the court with her. My son now loves tennis thanks to Jessica."</div>  
+                    <div class="quote-author">Karen Koh, Culver City</div>            
+                </div>
+            </div>
+              <div class="carousel-item">
+                    <div>"Jessica is a great play and student of tennis. It is a lifetime passion of hers and she is committed to her clients and the growth of others."</div>  
+                    <div class="quote-author">Jared Matthews, Calabasas</div>            
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,30 +94,42 @@
             </a>
           </div>
     </div>
-    <div class="container">
-        <div class="row banner-info">
-            <div class="col-8 banner-info__text">
-                <p>Ms. Jessica Warren is a professional tennis champion who has been playing competitive tennis since she was 8 yrs old.  As a professional player and elite tennis coach,  Jessica combines her extensive on court experience with her off court training in championship mindset. She helps build self confidence in children and young adults both on and off the court.</p>
-                
-                <p>To really succeed on the court and in life, mental, emotional and physical strength is required. Jessica is an expert at bringing out the best in her student’s physical strength, emotional tenacity, and mental acuity.</p>
-
-                <p>Jessica has been a private coach for some of the finest students in Bel Air, Beverly Hills, Malibu and the Hamptons. She is delighted to be bringing her unique cutting edge coaching strategies and techniques to Boca Raton and Palm Beach, Florida.</p>
+    <div class="parallax1">
+        <div class="welcome">
+            <div class="container">
+                <div class="row banner-info">
+                    <div class="col-6 banner-info__text">
+                        <h2 class="banner-info__heading">About <span>Jess</span></h2>
+                        <p>Ms. Jessica Warren is a professional tennis champion who has been playing competitive tennis since she was 8 yrs old.  As a professional player and elite tennis coach,  Jessica combines her extensive on court experience with her off court training in championship mindset. She helps build self confidence in children and young adults both on and off the court.</p>
+                        
+                        <p>To really succeed on the court and in life, mental, emotional and physical strength is required. Jessica is an expert at bringing out the best in her student’s physical strength, emotional tenacity, and mental acuity.</p>
+        
+                        <p>Jessica has been a private coach for some of the finest students in Bel Air, Beverly Hills, Malibu and the Hamptons. She is delighted to be bringing her unique coaching strategies and techniques to Boca Raton and Palm Beach, Florida.</p>
+                    </div>
+                    <div class="col-6">
+                        <a class="btn gallery-btn">Check out the Gallery</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 banner-info__bullets">
-                <ul>
-                    <li>accomplishment</li>
-                    <li>accomplishment</li>
-                    <li>accomplishment</li>
-                    <li>award</li>
-                    <li>award</li>
-                    <li>award</li>
-                </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row landing-blog">
+            <div class="col-12">
+                <div>Check out hand-picked tips and articles by Jessica</div>
+                <a class="btn blog-btn" href="blog.html">Browse Blog</a>
             </div>
         </div>
     </div>
     
-    <div class="footer container">
-
+    <div class="footer">
+        <ul class="footer-social-block">
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fa fa-phone"></i></a></li>
+        </ul>
+        <div class="footer-header">Jessica Warren Tennis</div>
+        <div class="footer-credits">Photography by: Baron Silverton | Website by: Mari Taslagyan</div>
     </div>
 </body>
 

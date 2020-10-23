@@ -6,24 +6,40 @@ html{
 }
 .header{
     background:white;
-    border-bottom:solid 1px rgb(218, 218, 218);
-    padding:14px;
+}
+.header-logo img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:80px;
+}
+.header-logo a{
+    color:black;
+}
+.header-logo a:hover{
+    text-decoration:none;
 }
 nav ul{
     display:flex;
     list-style-type: none;
     padding:0;
-    margin:30px 0;
 }
 nav ul li a{
     margin-right:15px;
-    font-size:18px;
+    font-size:16px;
     transition: 0.25s;
     color:black;
+    font-family: "Quicksand";
 }
 nav ul li a:hover{
     color:#78913d;
     text-decoration:none;
+}
+.main-nav{
+    display: flex;
+    align-items:center;
+    padding: 18px 0;
+    /* border-bottom:solid 1px rgb(218, 218, 218); */
 }
 .main-nav div{
     margin-left:auto;
@@ -37,40 +53,44 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     font-family: "Quicksand";
+    padding:25px 0;
 }
 .navbar{
     font-family: "Inter";
+    padding-bottom:0;
 }
 h1{
-    /* text-align: center; */
-    font-size:48px;
+    font-size:16px;
     font-weight:300;
-    /* padding:40px 0; */
     margin-bottom:0;
     display: flex;
+    justify-content: center;
 }
 h1 span{
     color:#78913d;
-    padding-left:14px;
+    padding-left:4px;
 }
 .social-block{
-    padding-top:14px;
     float:right;
+    margin-bottom:0;
 }
-.fa-instagram, .fa-twitter{
+.social-block .fa-phone{
+    font-size:15px;
+}
+.social-block .fa-envelope, .social-block .fa-instagram, .social-block .fa-phone{
     color:#78913d;
     transition:0.25s;
 }
-.fa-instagram:hover, .fa-twitter:hover{
+.social-block  .fa-envelope:hover, .social-block  .fa-instagram:hover, .social-block  .fa-phone:hover{
     color:black;
 }
-.fa-instagram{
+.social-block .fa-instagram{
     border-left: solid 1px rgb(218, 218, 218);
     padding-left:30px;
 }
 .parallax1{
     /* The image used */
-    background-image: url("images/jess.JPG");
+    background-image: url("images/jess-dark.JPG");
   
     /* Set a specific height */
     min-height: 375px; 
@@ -80,45 +100,192 @@ h1 span{
     background-position: 0px -350px;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .banner-info{
+}
+.btn{
+    color:white !important;
+}
+.btn:hover{
+    text-decoration:none;
+}
+.banner-info{
     border-top: solid 1px rgb(218, 218, 218);
-    padding-bottom:500px;
-  }
-  .banner-info__text{
-    padding:50px 100px 0 0 ;
+}
+.banner-info__text{
+    padding:50px 0px 80px 0;
     font-family:"Inter";
-  }
-  .banner-info__bullets{
-    background:#fafcf2;
-  }
-  .banner-info ul{
-    /* border-left: solid 1px rgb(218, 218, 218); */
-    list-style-type: circle;
-    font-size:18px;
-    padding:50px 0px 0px 50px;
-  }
-  .banner-info li{
-    line-height:2;
-    font-family:"Inter";
-  }
-  /* carousel */
-  
-  .carousel{
+    position: relative;
+    z-index: 3;
+    color:white;
+    font-size:14px;
+}
+.welcome{
+    background:transparent;
+}
+
+/* carousel */
+.testimonials{
+    padding:30px 0;
+    min-height:400px;
+}
+.carousel-control-prev, .carousel-control-next{
+    display:none;
+}
+.carousel{
     margin:40px 200px 40px 200px;
-  }
-  .carousel-item{
+}
+.carousel-item{
     text-align: center;
-    font-family: "Handlee";
+    font-family: "Open Sans Condensed";
     font-size:20px;
-  }
-  .carousel-indicators{
-      
-  }
-  h2{
+}
+.carousel-indicators{
+    
+}
+.testimonial-heading{
     font-family: "Inter";
     text-align: center;
     font-size: 18px;
     padding-top:40px;
     color:#78913d;
-  }
+    font-weight:bold;
+}
+.carousel-indicators li{
+    display:none;
+}
+.banner-info__heading{
+    font-family: "Quicksand";
+    font-size: 36px;
+    padding:20px 0 20px 0;
+    color:white;
+    position: relative;
+    margin-bottom:30px;
+}
+.banner-info__heading span{
+    color:#78913d;
+    font-weight:bold;
+    /* font-family: "Inter"; */
+}
+.banner-info__heading:after{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:2px;
+    bottom:0;
+    background:#78913d;
+    left:0;
+}
+.quote-author{
+    margin-top:20px;
+    padding-top:10px;
+    font-family: "Open Sans Condensed";
+    font-style:italic;
+    position:relative;
+}
+.quote-author:before{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:1px;
+    top:0;
+    background:#78913d;
+    left:50%;
+    transform: translateX(-50%);
+}
+.contact-row{
+    padding:60px 0;
+    text-align:center;
+}
+.contact-btn{
+    border-radius:30px;
+    font-size:18px;
+    background:#78913d;
+    color:white;
+    padding:12px 26px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Quicksand";
+    transition:0.25s ease-in-out;
+}
+.contact-btn:hover{
+    background:#1a2403;
+}
+.gallery-btn{
+    border-radius:30px;
+    font-size:18px;
+    background:#78913d;
+    color:white;
+    padding:12px 26px;
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    font-family: "Quicksand";
+    transition:0.25s ease-in-out;
+}
+.gallery-btn:hover{
+    background:#1a2403;
+}
+.blog-btn{
+    border-radius:30px;
+    font-size:18px;
+    background:#78913d;
+    color:white;
+    padding:12px 26px;
+    font-family: "Quicksand";
+    transition:0.25s ease-in-out;
+}
+.blog-btn:hover{
+    background:#1a2403;
+}
+.landing-blog{
+    padding:50px;
+}
+.landing-blog div{
+    font-family: "Quicksand";
+    margin:10px 0;
+    font-size:36px;
+    text-align:center;
+}
+.footer{
+    background-color:black;
+    height:auto;
+}
+.footer-social-block{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:50px 0 25px 0;
+}
+.footer-social-block .fa-instagram, .footer-social-block .fa-envelope, .footer-social-block .fa-phone {
+    color:white;
+    border: solid 1px white;
+    border-radius:50%;
+    padding:15px;
+    transition: 0.25s ease-in-out;
+}
+.footer-social-block .fa-instagram:hover, .footer-social-block .fa-envelope:hover, .footer-social-block .fa-phone:hover {
+    color:#78913d;
+    border: solid 1px white;
+    border-radius:50%;
+    padding:15px;
+}
+.footer-social-block .fa-envelope{
+    margin:0 15px;
+}
+.footer-header{
+    font-family: "Quicksand";
+    font-size:24px;
+    text-align:center;
+    margin:0;
+    color:grey;
+}
+.footer-credits{
+    font-family: "Quicksand";
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    padding:50px 0;
+    color:grey;
+}
