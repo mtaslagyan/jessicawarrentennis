@@ -18,22 +18,25 @@
     <div class="header container">
         <nav>
             <div class="main-nav row">
-                <div class="col-3 navbar">
+                <div class="col-5 navbar">
                     <ul>
                         <li> <a href="index.html">home</a> </li>
                         <li> <a href="about.html">about</a> </li>
                         <li> <a href="prices.html">prices</a> </li>
                         <li> <a href="gallery.html">gallery</a> </li>
                         <li> <a href="blog.html">blog</a></li>
+                        <li> <a href="testimonials.html">testimonials</a></li>
                     </ul>
                 </div>
-                <div class="col-6 header-logo">
-                    <a href="index.html">
-                        <img src="images/jess-logo.png" alt="">
-                        <h1>jessica warren <span>tennis</span></h1>
-                    </a>
+                <div class="col-2 header-logo">
+                    <div class="header-logo-button">
+                        <a href="index.html">
+                            <img src="images/jess-logo.png" alt="">
+                            <h1>jessica warren <span>tennis</span></h1>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-3">
+                <div class="col-5">
                     <ul class="social-block">
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa fa-envelope"></i></a></li>
@@ -92,7 +95,10 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+        </div>
+        <div class="testimonial-link-wrapper">
+            <a href="testimonials.html" class="testimonial-link">Read All Testimonials</a>
+        </div>
     </div>
     <div class="parallax1">
         <div class="welcome">
@@ -132,6 +138,11 @@
         <div class="footer-credits">Photography by: Baron Silverton | Website by: Mari Taslagyan</div>
     </div>
 </body>
+<script>
+    $('.carousel').carousel({
+        interval: 5000
+    })
+</script>
 
 </html>
 

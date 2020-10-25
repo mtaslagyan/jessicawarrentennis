@@ -16,6 +16,9 @@ html{
 .header-logo a{
     color:black;
 }
+.header-logo-button{
+    width:100%;
+}
 .header-logo a:hover{
     text-decoration:none;
 }
@@ -39,7 +42,6 @@ nav ul li a:hover{
     display: flex;
     align-items:center;
     padding: 18px 0;
-    /* border-bottom:solid 1px rgb(218, 218, 218); */
 }
 .main-nav div{
     margin-left:auto;
@@ -125,13 +127,32 @@ h1 span{
 /* carousel */
 .testimonials{
     padding:30px 0;
-    min-height:400px;
+    min-height:380px;
+}
+.testimonial-link-wrapper{
+    text-align: center;
+    margin-bottom:100px;
+}
+.testimonial-link{
+    border: solid 1px #78913d;
+    border-radius:35px;
+    font-family: "Quicksand";
+    font-size: 14px;
+    padding:15px 25px;
+    color:#78913d;
+    font-weight:bold;
+    transition: .25s ease-in-out;
+}
+.testimonial-link:hover{
+    background:#78913d;
+    color:white;
+    text-decoration: none;
 }
 .carousel-control-prev, .carousel-control-next{
     display:none;
 }
 .carousel{
-    margin:40px 200px 40px 200px;
+    margin:40px 200px 10px 200px;
 }
 .carousel-item{
     text-align: center;
