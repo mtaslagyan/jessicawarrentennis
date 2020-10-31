@@ -17,7 +17,7 @@
     <div class="header container">
         <nav>
             <div class="main-nav row">
-                <div class="col-5 navbar">
+                <div class="col-12 col-xl-5 order-3 order-xl-1 navbar">
                     <ul>
                         <li> <a href="index.html">home</a> </li>
                         <li> <a href="about.html">about</a> </li>
@@ -27,7 +27,7 @@
                         <li> <a href="testimonials.html">testimonials</a></li>
                     </ul>
                 </div>
-                <div class="col-2 header-logo">
+                <div class="col-8 col-xl-2 order-1 header-logo">
                     <div class="header-logo-button">
                         <a href="index.html">
                             <img src="images/jess-logo.png" alt="">
@@ -35,40 +35,62 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-4 col-xl-5 order-2 order-xl-3">
                     <ul class="social-block">
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="comingsoon">
-        Gallery coming soon!
+    <div class="gallery-banner">
+        <h2>Gallery</h2>
+    </div>
+    <div class="gallery-content">
+        <div class="gallery-video">
+            <video controls>
+                <source src="videos/gallery-hitting.MP4" type="video/mp4">
+            </video>
+        </div>
     </div>
     <div class="footer">
         <ul class="footer-social-block">
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="#"><i class="fa fa-phone"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
         </ul>
         <div class="footer-header">Jessica Warren Tennis</div>
-        <div class="footer-credits">Photography by: Baron Silverton | Website by: Mari Taslagyan</div>
+        <div class="footer-credits">Photography by: Baron Silverton <span>|</span><div class="footer-break"><br></div> Website by: Mari Taslagyan</div>
     </div>
 </body>
 </html>
 
 <style>
-    .comingsoon{
+    .gallery-banner{
         background:#78913d;
-        padding:200px 0;
+        padding:50px 0;
         display:flex;
         justify-content:center;
         align-items:center;
         color:white;
         font-size:24px;
         font-family: "Quicksand";
+    }
+    .gallery-video{
+        text-align: center;
+        padding:50px 20px;
+    }
+    .gallery-video video{
+        width:300px;
+    }
+    @media(max-width: 768px){
+        .gallery-banner{
+            padding:20px 0;
+        }
+        .gallery-video{
+            padding:20px 0;
+        }   
     }
 </style>

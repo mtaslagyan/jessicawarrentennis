@@ -17,7 +17,7 @@
     <div class="header container">
         <nav>
             <div class="main-nav row">
-                <div class="col-5 navbar">
+                <div class="col-12 col-xl-5 order-3 order-xl-1 navbar">
                     <ul>
                         <li> <a href="index.html">home</a> </li>
                         <li> <a href="about.html">about</a> </li>
@@ -27,7 +27,7 @@
                         <li> <a href="testimonials.html">testimonials</a></li>
                     </ul>
                 </div>
-                <div class="col-2 header-logo">
+                <div class="col-8 col-xl-2 order-1 header-logo">
                     <div class="header-logo-button">
                         <a href="index.html">
                             <img src="images/jess-logo.png" alt="">
@@ -35,22 +35,22 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-4 col-xl-5 order-2 order-xl-3">
                     <ul class="social-block">
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="prices-banner">
+    <div class="about-banner">
         <h2>About</h2>
     </div>
     <div class="aboutjess container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
                 <div class="aboutjess__text ">
                     <h2 class="aboutjess__heading">Jessica <span>Warren</span></h2>
                     <p>Ms. Jessica Warren is a professional tennis champion who has been playing competitive tennis since she was 8 yrs old.  As a professional player and elite tennis coach,  Jessica combines her extensive on court experience with her off court training in championship mindset. She helps build self confidence in children and young adults both on and off the court.</p>
@@ -60,25 +60,25 @@
                     <p>Jessica has been a private coach for some of the finest students in Bel Air, Beverly Hills, Malibu and the Hamptons. She is delighted to be bringing her unique coaching strategies and techniques to Boca Raton and Palm Beach, Florida.</p>
                 </div>
             </div>
-            <div class="col-6 aboutme-image">
+            <div class="col-12 col-lg-6 order-1 order-lg-2 aboutme-image">
                 <img src="images/jess-aboutme.jpg" alt="">
             </div>
         </div>
     </div>
     <div class="footer">
         <ul class="footer-social-block">
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="#"><i class="fa fa-phone"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
         </ul>
         <div class="footer-header">Jessica Warren Tennis</div>
-        <div class="footer-credits">Photography by: Baron Silverton | Website by: Mari Taslagyan</div>
+        <div class="footer-credits">Photography by: Baron Silverton <span>|</span><div class="footer-break"><br></div> Website by: Mari Taslagyan</div>
     </div>
 </body>
 </html>
 
 <style>
-    .prices-banner{
+    .about-banner{
         background:#78913d;
         padding:50px 0;
         display:flex;
@@ -107,19 +107,30 @@
         /* font-family: "Inter"; */
     }
     .aboutjess__heading:after{
-    content:"";
-    position:absolute;
-    width:40px;
-    height:2px;
-    bottom:0;
-    background:#78913d;
-    left:0;
-}
+        content:"";
+        position:absolute;
+        width:40px;
+        height:2px;
+        bottom:0;
+        background:#78913d;
+        left:0;
+    }
     .aboutme-image img{
         width:80%;
-        padding-top:50px;
+        padding-top:90px;
         margin-left:auto;
         margin-right:auto;
         display:block;
+    }
+    @media(max-width: 768px){
+        .about-banner {
+            padding: 20px 0;
+        }
+        .aboutjess__text {
+            padding: 20px 0;
+        }
+        .aboutme-image img {
+            padding-top: 30px;
+        }
     }
 </style>

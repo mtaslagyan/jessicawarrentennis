@@ -17,7 +17,7 @@
     <div class="header container">
         <nav>
             <div class="main-nav row">
-                <div class="col-5 navbar">
+                <div class="col-12 col-xl-5 order-3 order-xl-1 navbar">
                     <ul>
                         <li> <a href="index.html">home</a> </li>
                         <li> <a href="about.html">about</a> </li>
@@ -27,7 +27,7 @@
                         <li> <a href="testimonials.html">testimonials</a></li>
                     </ul>
                 </div>
-                <div class="col-2 header-logo">
+                <div class="col-8 col-xl-2 order-1 header-logo">
                     <div class="header-logo-button">
                         <a href="index.html">
                             <img src="images/jess-logo.png" alt="">
@@ -35,11 +35,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-4 col-xl-5 order-2 order-xl-3">
                     <ul class="social-block">
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                        <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -50,19 +50,19 @@
     </div>
     <div class="prices-content">
         <ul>
-            <li><span>private lesson -</span> $250</li>
-            <li><span>package lesson -</span> $200</li>
+            <li><span>private lesson -</span> $250/hr</li>
+            <li><span>package lesson -</span> $200/hr</li>
         </ul>
 
     </div>
     <div class="footer">
         <ul class="footer-social-block">
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="#"><i class="fa fa-phone"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
         </ul>
         <div class="footer-header">Jessica Warren Tennis</div>
-        <div class="footer-credits">Photography by: Baron Silverton | Website by: Mari Taslagyan</div>
+        <div class="footer-credits">Photography by: Baron Silverton <span>|</span><div class="footer-break"><br></div> Website by: Mari Taslagyan</div>
     </div>
 </body>
 </html>
@@ -112,5 +112,16 @@
     }
     .prices-content li span{
         color:white;
+    }
+    @media(max-width: 768px){
+        .prices-banner {
+            padding: 20px 0;
+        }
+        .prices-content ul{
+            padding:80px 20px;
+        }
+        .prices-content li{
+            font-size:18px;
+        }
     }
 </style>

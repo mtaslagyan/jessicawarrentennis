@@ -26,6 +26,7 @@ nav ul{
     display:flex;
     list-style-type: none;
     padding:0;
+    
 }
 nav ul li a{
     margin-right:15px;
@@ -309,4 +310,88 @@ h1 span{
     margin:0;
     padding:50px 0;
     color:grey;
+}
+.footer-break{
+    display:none;
+}
+/* MEDIA QUERIES */
+
+@media (max-width:1199px) {
+    .header{
+        max-width:100%;
+    }
+    .navbar{
+        display:flex;
+        justify-content: center;
+        margin-top:20px;
+        background:rgb(238, 238, 238);
+        padding:15px 0;
+    }   
+    .main-nav{
+        padding:18px 0 0 0;
+    }    
+    .navbar ul{
+        margin-bottom:0;
+    }
+    .carousel{
+        margin:40px 60px 10px 60px;
+    }
+    .parallax1{
+        background-position: top center;
+    }
+    .header-logo img{
+        display:flex;
+        margin-left:38px;
+        margin-right:0;
+        width:80px;
+    }
+    h1{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:768px) {
+    .carousel{
+        margin:40px 20px 10px 20px;
+    }
+    .contact-btn{
+        top:60%;
+    }
+}
+@media (max-width:767px) {
+    .gallery-btn {
+        position: relative;
+        font-size: 14px;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width:425px) {
+    nav ul li a{
+        font-size:12px;
+        margin-left:7.5px;
+        margin-right:7.5px;
+    }
+    .footer-credits{
+        font-size:14px;
+        line-height:1;
+    }
+    .footer-break{
+        display:block;
+    }
+    .footer-credits span{
+        display:none;
+    }
+    .landing-blog div {
+        font-size: 24px;
+    }
+    .banner-info__text {
+        padding: 30px 20px 50px 20px;
+        font-family: "Inter";
+        position: relative;
+        z-index: 3;
+        color: white;
+        font-size: 14px;
+    }
 }
