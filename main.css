@@ -356,6 +356,9 @@ h1 span{
     h1{
         justify-content: flex-start;
     }
+    .contact-btn{
+        top:57%;
+    }
 }
 
 @media (max-width:768px) {
