@@ -225,16 +225,18 @@ h1 span{
     padding:60px 0;
     text-align:center;
 }
+.contactus-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 375px;
+}
 .contact-btn{
     border-radius:30px;
     font-size:18px;
     background:#78913d;
     color:white;
     padding:12px 26px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
     font-family: "Quicksand";
     transition:0.25s ease-in-out;
 }
@@ -377,6 +379,9 @@ h1 span{
     .testimonials{
         padding:30px 0;
         min-height:380px;
+    }
+    .contactus-container{
+        height: 250px;
     }
 }
 @media (max-width:767px) {
