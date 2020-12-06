@@ -49,25 +49,31 @@
         <h2>Gallery</h2>
     </div>
     <div class="gallery-content container">
-        <div class="row">
-            <video controls>
-                <source src="videos/gallery-hitting.MP4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="videos/gallery-vid1.MOV" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="videos/gallery-vid2.mov" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="videos/gallery-vid3.mov" type="video/mp4">
-            </video>
-            <img src="images/gallery-image1.JPG" alt="">
-            <img src="images/gallery-image2.JPG" alt="">
-            <img src="images/gallery-image3.JPG" alt="">
-            <img src="images/gallery-image4.JPG" alt="">
-        </div>
-
+        <div class="row gallery-row">
+            <div class="col gallery-col">
+                <video controls>
+                    <source src="videos/gallery-hitting.MP4" type="video/mp4">
+                </video>
+                <img src="images/gallery-image1.JPG" alt="">
+                <video controls>
+                    <source src="videos/gallery-vid2.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="col gallery-col">
+                <img src="images/gallery-image3.JPG" alt="">
+                <img src="images/gallery-image4.JPG" alt="">
+                <video controls>
+                    <source src="videos/gallery-vid1.MOV" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="col-4">
+                <video controls>
+                    <source src="videos/gallery-vid3.mov" type="video/mp4">
+                </video>
+                <img src="images/gallery-image2.JPG" alt="">
+            </div>
+         </div>
     </div>
     <div class="footer">
         <ul class="footer-social-block">
@@ -82,6 +88,40 @@
 </html>
 
 <style>
+    .gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
     .gallery-banner{
         background:#78913d;
         padding:50px 0;
