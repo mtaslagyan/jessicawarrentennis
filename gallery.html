@@ -65,9 +65,6 @@
             </div>
             
             <div class="col gallery-col">
-                <video controls>
-                    <source src="videos/gallery-vid3.mov" type="video/mp4">
-                </video>
                 <img src="images/gallery-image2.JPG" alt="">
             </div>
             <div class="col gallery-col">
@@ -91,10 +88,10 @@
 </html>
 
 <style>
-    .gallery-row {
+.gallery-row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 25px 4px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -104,8 +101,8 @@
   padding: 0 4px;
 }
 
-.gallery-col img {
-  margin-top: 8px;
+.gallery-col img, .gallery-col video {
+  margin-top: 12px;
   vertical-align: middle;
   width: 100%;
 }
