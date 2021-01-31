@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-4 col-xl-5 order-2 order-xl-3">
                     <ul class="social-block">
-                        <li><a href="resume.html" class=""><i class="fas fa-file-alt mr-2"></i>Resume</a></li>
+                        <li><a href="resume.html" class="header-resume-btn"><i class="fas fa-file-alt mr-2"></i><span>Resume</span></a></li>
                         <li><a target="_blank" href="https://www.instagram.com/jesswarrentennis/?hl=en"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="mailto:jesswarrentennis@gmail.com"><i class="fa fa-envelope"></i></a></li>
                         <li><a href="tel:13104254445"><i class="fa fa-phone"></i></a></li>
@@ -49,12 +49,8 @@
     <div class="resume-banner">
         <h2>Resume</h2>
     </div>
-    <div class="resume-content">
-        <object data="images/JESSICA-WARREN-RESUME-2021.pdf" type="application/pdf" width="100%" height="800px"> 
-            <p>It appears you don't have a PDF plugin for this browser.
-             No biggie... you can <a href="images/JESSICA-WARREN-RESUME-2021.pdf">click here to
-            download the PDF file.</a></p>  
-        </object>
+    <div class="resume-content text-center my-5 py-5">
+        <a class="btn resume-btn" href="images/JESSICA-WARREN-RESUME-2021.pdf" download="Jessica Warren's Resume"><i class="fas fa-download mr-2"></i>Download Jessica's Resume</a>
     </div>
     <div class="footer">
         <ul class="footer-social-block">
@@ -78,6 +74,24 @@
         color:white;
         font-size:24px;
         font-family: "Quicksand";
+    }
+    .resume-btn{
+        border-radius:30px;
+        font-size:18px;
+        background:#78913d;
+        color:white;
+        width: 300px;
+        padding: 12px 20px;
+        font-family: "Quicksand";
+        transition:0.25s ease-in-out;
+    }
+    .resume-btn:hover{
+        background:#1a2403;
+    }
+    @media(max-width:768px){
+        .header-resume-btn span{
+            display:none;
+        }
     }
 </style>
 

@@ -80,11 +80,11 @@ h1 span{
 .social-block .fa-phone{
     font-size:15px;
 }
-.social-block .fa-envelope, .social-block .fa-instagram, .social-block .fa-phone{
+.social-block .fa-envelope, .social-block .fa-instagram, .social-block .fa-file-alt, .social-block .fa-phone{
     color:#78913d;
     transition:0.25s;
 }
-.social-block  .fa-envelope:hover, .social-block  .fa-instagram:hover, .social-block  .fa-phone:hover{
+.social-block  .fa-envelope:hover, .social-block .fa-file-alt:hover, .social-block  .fa-instagram:hover, .social-block  .fa-phone:hover{
     color:black;
 }
 .social-block .fa-instagram{
@@ -382,6 +382,9 @@ h1 span{
     }
     .contactus-container{
         height: 250px;
+    }
+    .header-resume-btn span{
+        display:none;
     }
 }
 @media (max-width:767px) {
