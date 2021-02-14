@@ -227,6 +227,7 @@ h1 span{
 }
 .contactus-container{
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     height: 375px;
@@ -242,6 +243,13 @@ h1 span{
 }
 .contact-btn:hover{
     background:#1a2403;
+}
+.banner-content{
+    color:white;
+    font-family:"Inter";
+    font-size:14px;
+    margin-bottom:25px;
+    padding:0 50px;
 }
 .gallery-btn{
     border-radius:30px;
