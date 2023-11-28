@@ -311,7 +311,7 @@ h1 span{
     border-radius:50%;
     padding:15px;
 }
-.footer-social-block .fa-envelope{
+.footer-social-block .fa-envelope, .footer-social-block .fa-instagram{
     margin:0 15px;
 }
 .footer-header{
